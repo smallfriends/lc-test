@@ -16,7 +16,7 @@ class ListNode {
     }
 }
 
-public class Solution {
+public class ListNodePractice {
     //链表的首个公共节点
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode lA = headA, lB = headB;
