@@ -89,4 +89,16 @@ public class TreePractice {
         return ans;
     }
 
+    //镜像，翻转二叉树，深度优先搜索
+    public TreeNode invertTree(TreeNode root) {
+        if(root == null) {
+            return null;
+        }
+        TreeNode l = invertTree(root.left);
+        TreeNode r = invertTree(root.right);
+        root.left = r;
+        root.right = l;
+        return root;
+    }
+
 }
